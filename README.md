@@ -15,7 +15,7 @@ Email: jameschengcs@nycu.edu.tw
 * scikit-learn 1.4.2
 * scikit-image 0.22.0
 ### Usage
-```python pp.py input_path output_path [--a=A] [--b=B] [--f=F] [--m=M] [--s=S] [-j] [-o]```
+```python ptp.py input_path output_path [--a=A] [--b=B] [--f=F] [--m=M] [--s=S] [-j] [-o]```
 #### Parameters
 * *input_path*, input filepath. The input can be an image or json file.
 * *output_path*, output filepath, *.png or *.mp4.
@@ -29,9 +29,9 @@ Email: jameschengcs@nycu.edu.tw
   
 #### Examples
 ```
-python pp.py testdata/flower.jpeg output/flower_1.png --m=500 --b=watercolor1
-python pp.py testdata/flower.jpeg output/flower_2.png --m=250 --b=chalk -o -j
-python pp.py output/flower_2.json output/flower_3.mp4 --b=chalk -o --s=1 --f=20
+python ptp.py testdata/flower.jpeg output/flower_1.png --m=500 --b=watercolor1
+python ptp.py testdata/flower.jpeg output/flower_2.png --m=250 --b=chalk -o -j
+python ptp.py output/flower_2.json output/flower_3.mp4 --b=chalk -o --s=1 --f=20
 ```
 
 #### json format
