@@ -1,4 +1,4 @@
-# Photo Painter
+# Image Painter
 **Chang-Chieh Cheng**\
 Information Technology Service Center, National Yang Ming Chiao Tung University, Hsinchu, Taiwan\
 Email: jameschengcs@nycu.edu.tw
@@ -15,7 +15,7 @@ Email: jameschengcs@nycu.edu.tw
 * scikit-learn 1.4.2
 * scikit-image 0.22.0
 ### Usage
-```python ptp.py input_path output_path [--a=A] [--b=B] [--f=F] [--m=M] [--s=S] [-j] [-o]```
+```python ip.py input_path output_path [--a=A] [--b=B] [--f=F] [--m=M] [--s=S] [-j] [-o]```
 #### Parameters
 * *input_path*, input filepath. The input can be an image or json file.
 * *output_path*, output filepath, *.png or *.mp4.
@@ -29,9 +29,9 @@ Email: jameschengcs@nycu.edu.tw
   
 #### Examples
 ```
-python ptp.py testdata/flower.jpeg output/flower_1.png --m=500 --b=watercolor1
-python ptp.py testdata/flower.jpeg output/flower_2.png --m=250 --b=chalk -o -j
-python ptp.py output/flower_2.json output/flower_3.mp4 --b=chalk -o --s=1 --f=20
+python ip.py testdata/flower.jpeg output/flower_1.png --m=500 --b=watercolor1
+python ip.py testdata/flower.jpeg output/flower_2.png --m=250 --b=chalk -o -j
+python ip.py output/flower_2.json output/flower_3.mp4 --b=chalk -o --s=1 --f=20
 ```
 
 #### json format
