@@ -3,6 +3,7 @@
 Information Technology Service Center, National Yang Ming Chiao Tung University, Hsinchu, Taiwan\
 Email: jameschengcs@nycu.edu.tw
 <p align="center"><img src="demo/demo.png"  width="80%"> </p>
+
 *Two variant painting styles simulated by the proposed method. The left and right images present oil sketch and watercolor styles, respectively, with each rendering utilizing 500 strokes. The input image souced from ImageNet is depicted in the top-left corner of each frame.*
 
 ### Hardware requirements
