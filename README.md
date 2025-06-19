@@ -1,7 +1,21 @@
-# Image Painter
+# Image Painter: An Optimized Stroke-Based Algorithm for Artistic Image Stylization
 **Chang-Chieh Cheng**\
 Information Technology Service Center, National Yang Ming Chiao Tung University, Hsinchu, Taiwan\
 Email: jameschengcs@nycu.edu.tw
+
+## Abstract
+This paper presents a novel stroke-based rendering algorithm designed to transform input photographs into painting-style images using a series of brush strokes. 
+Inspired by the contemporary inclination towards abstraction in art, the proposed method incorporates techniques from non-photorealistic rendering to achieve its objective.
+Traditional stroke-based rendering methods often struggle to achieve high-quality results with a limited number of strokes. 
+To address this, the proposed algorithm utilizes connected-component labeling and principal component analysis to accurately initialize the rendering parameters of each stroke. 
+Subsequent refinement of strokes through forward and backward optimizations further enhances the quality of the rendering. 
+However, the sequential adjustment of strokes proves to be inefficient. 
+To expedite computation, this paper introduces an acceleration strategy that enables simultaneous adjustment of multiple strokes. 
+Experimental validation of the proposed method confirms its effectiveness in generating high-quality painting-style images with minimal strokes. 
+Comparative analyses against baseline methods demonstrate superior rendering quality based on metrics such as Mean Squared Error, Structural Similarity Index, Peak Signal-to-Noise Ratio, and Learned Perceptual Image Patch Similarity. 
+In conclusion, the proposed method offers a promising solution for image stylization and abstraction, with potential applications spanning digital art, entertainment, and image editing software.
+
+
 <p align="center"><img src="demo/demo.png"  width="80%"> </p>
 
 *Two variant painting styles simulated by the proposed method. The left and right images present oil sketch and watercolor styles, respectively, with each rendering utilizing 500 strokes. The input image souced from ImageNet is depicted in the top-left corner of each frame.*
