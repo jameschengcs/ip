@@ -1,5 +1,5 @@
 '''
-FSP v1.0
+Image Painter v1.0
 # (c) 2024, Chang-Chieh Cheng, jameschengcs@nycu.edu.tw
 '''
 import numpy as np
@@ -1278,6 +1278,7 @@ class painter:
 
         if div_shape is None:
             div_shape = self.divShape(n_max, lv_start)
+        print('painter::div_shape:', div_shape)
 
         if verbose & 1:
             timeS = time.time()
