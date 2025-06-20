@@ -30,17 +30,27 @@ In conclusion, the proposed method offers a promising solution for image styliza
 * scikit-learn 1.4.2
 * scikit-image 0.22.0
 ### Usage
-```python ip.py input_path output_path [--a=A] [--b=B] [--f=F] [--m=M] [--s=S] [-j] [-o]```
+```
+python ip.py input_path output_path
+              [--a=int] [--b=str] [--m=int] [--f=n] [--s=int] 
+              [--tau_y=int] [--tau_x=int] 
+              [--beta=float] [--p=int] [--bo=int]
+              [-o] [-j]
+```
 #### Parameters
-* *input_path*, input filepath. The input can be an image or json file.
-* *output_path*, output filepath, *.png or *.mp4.
-* *--a*, accuracy, 0 and 7 indicate the lowest and highest accuracies respectively. Default is 4.
-* *--b*, brush name. Default is *watercolor1*. Ensure that all brush templates are in PNG format and are stored within the *brush* directory. The filenames, excluding extensions, serve as the brush names.
-* *--m*, maximum stroke number. Default is 500. 
-* *--f*, frame per second (FPS). Default is 8. 
-* *--s*, painting stroke batch size. Default is 10. 
-* *-o*, using brush template as oppacity.
-* *-j*, output json file.
+* *input_path*: Input filepath. The input can be an image or json file.
+* *output_path*: Output filepath, *.png or *.mp4.
+* *--a*: Accuracy, 0 and 7 indicate the lowest and highest accuracies respectively. The default value is 4.
+* *--b*: Brush name. The default value is *watercolor1*. Ensure that all brush templates are in PNG format and are stored within the *brush* directory. The filenames, excluding extensions, serve as the brush names.
+* *--m*: Maximum number of strokes. The default value is 500.
+* *--f*: Frame per second (FPS). The default value is 8. 
+* *--tau_x*: Width of the sub-region. By default, it is automatically determined based on m and the image width.
+* *--tau_y*, Height of the sub-region. By default, it is automatically determined based on m and the image height.
+* *--beta*: Difference threshold. The default value is 0.3.
+* *--p*: Number of strokes for parallel computin. The default value is 4.
+* *--bo*: Number of rounds of backward optimization. By default, it is automatically determined based --a.
+* *-o*: Using brush template as oppacity.
+* *-j*: Output json file.
   
 #### Examples
 ```
