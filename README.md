@@ -59,6 +59,18 @@ python ip.py testdata/flower.jpeg output/flower_2.png --m=250 --b=chalk -o -j
 python ip.py output/flower_2.json output/flower_3.mp4 --b=chalk -o --s=1 --f=20
 ```
 
+For comparative analysis with other SBR methods:
+```
+python ip.py input_path output_path --m=50 --b=CNP
+python ip.py input_path output_path --m=100 --b=CNP
+python ip.py input_path output_path --m=250 --b=CNP 
+python ip.py input_path output_path --m=500 --b=CNP
+python ip.py input_path output_path --m=2000 --b=CNP 
+```
+*The test dataset consisted of CelebA and the validation folder of ImageNet.* <br />
+[CelebA](https://mmlab.ie.cuhk.edu.hk/projects/CelebA.html) <br />
+[ImageNet](https://www.image-net.org/) <br />
+
 #### json format
 ```
 {
