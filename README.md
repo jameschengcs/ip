@@ -59,7 +59,8 @@ python ip.py testdata/flower.jpeg output/flower_2.png --m=250 --b=chalk -o -j
 python ip.py output/flower_2.json output/flower_3.mp4 --b=chalk -o --s=1 --f=20
 ```
 
-For comparative analysis with other SBR methods:
+#### For comparative analysis with other SBR methods:
+$m=$ 50, 100, 150, 500, and 200
 ```
 python ip.py input_path output_path --m=50 --b=CNP
 python ip.py input_path output_path --m=100 --b=CNP
