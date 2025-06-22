@@ -4,16 +4,13 @@ Information Technology Service Center, National Yang Ming Chiao Tung University,
 Email: jameschengcs@nycu.edu.tw
 
 ## Abstract
-This paper presents a novel stroke-based rendering algorithm designed to transform input photographs into painting-style images using a series of brush strokes. 
-Inspired by the contemporary inclination towards abstraction in art, the proposed method incorporates techniques from non-photorealistic rendering to achieve its objective.
-Traditional stroke-based rendering methods often struggle to achieve high-quality results with a limited number of strokes. 
-To address this, the proposed algorithm utilizes connected-component labeling and principal component analysis to accurately initialize the rendering parameters of each stroke. 
-Subsequent refinement of strokes through forward and backward optimizations further enhances the quality of the rendering. 
-However, the sequential adjustment of strokes proves to be inefficient. 
-To expedite computation, this paper introduces an acceleration strategy that enables simultaneous adjustment of multiple strokes. 
-Experimental validation of the proposed method confirms its effectiveness in generating high-quality painting-style images with minimal strokes. 
-Comparative analyses against baseline methods demonstrate superior rendering quality based on metrics such as Mean Squared Error, Structural Similarity Index, Peak Signal-to-Noise Ratio, and Learned Perceptual Image Patch Similarity. 
-In conclusion, the proposed method offers a promising solution for image stylization and abstraction, with potential applications spanning digital art, entertainment, and image editing software.
+Image Painter (IP) is a novel stroke-based rendering (SBR) algorithm that converts input photographs into painting-style images using a sequence of brush strokes. 
+Leveraging techniques from non-photorealistic rendering, IP supports both stylization and abstraction, even when limited to a small number of strokes. 
+While traditional SBR methods often struggle to maintain quality under such constraints, IP addresses this challenge through accurate stroke initialization using connected-component labeling and principal component analysis. 
+Rendering quality is further enhanced via a multi-stage trial-and-error optimization process, including forward and backward refinements. 
+To overcome the inefficiency of sequential stroke updates, IP introduces a parallel adjustment strategy that significantly accelerates convergence. 
+Experimental results show that IP achieves high-quality visual results with substantially fewer strokes, outperforming existing methods across key metrics: Mean Squared Error (MSE), Structural Similarity Index (SSIM), Peak Signal-to-Noise Ratio (PSNR), and Learned Perceptual Image Patch Similarity (LPIPS). 
+These results highlight IP’s effectiveness and potential for applications in digital art, entertainment, and creative image editing.
 
 
 <p align="center"><img src="demo/demo.png"  width="80%"> </p>
