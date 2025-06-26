@@ -8,7 +8,6 @@ Image Painter (IP) is a novel stroke-based rendering (SBR) algorithm that conver
 Leveraging techniques from non-photorealistic rendering, IP supports both stylization and abstraction, even when limited to a small number of strokes. 
 While traditional SBR methods often struggle to maintain quality under such constraints, IP addresses this challenge through accurate stroke initialization using connected-component labeling and principal component analysis. 
 Rendering quality is further enhanced via a multi-stage trial-and-error optimization process, including forward and backward refinements. 
-To overcome the inefficiency of sequential stroke updates, IP introduces a parallel adjustment strategy that significantly accelerates convergence. 
 Experimental results show that IP achieves high-quality visual results with substantially fewer strokes, outperforming existing methods across key metrics: Mean Squared Error (MSE), Structural Similarity Index (SSIM), Peak Signal-to-Noise Ratio (PSNR), and Learned Perceptual Image Patch Similarity (LPIPS). 
 These results highlight IP’s effectiveness and potential for applications in digital art, entertainment, and creative image editing.
 
@@ -31,7 +30,7 @@ These results highlight IP’s effectiveness and potential for applications in d
 python ip.py input_path output_path
               [--a=int] [--b=str] [--m=int] [--f=n] [--s=int] 
               [--tau_y=int] [--tau_x=int] 
-              [--beta=float] [--p=int] [--bo=int]
+              [--beta=float] [--bo=int]
               [-o] [-j]
 ```
 #### Parameters
@@ -44,7 +43,6 @@ python ip.py input_path output_path
 * *--tau_x*: Width of the sub-region. By default, it is automatically determined based on m and the image width.
 * *--tau_y*, Height of the sub-region. By default, it is automatically determined based on m and the image height.
 * *--beta*: Difference threshold. The default value is 0.3.
-* *--p*: Number of strokes for parallel computin. The default value is 4.
 * *--bo*: Number of rounds of backward optimization. By default, it is automatically determined based --a.
 * *-o*: Using brush template as oppacity.
 * *-j*: Output json file.
