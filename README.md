@@ -79,3 +79,22 @@ python ip.py input_path output_path --m=2000 --b=CNP
 #### Demo
 [![](https://markdown-videos-api.jorgenkh.no/youtube/tsGGtY4C4Tk)](https://youtu.be/tsGGtY4C4Tk) [![](https://markdown-videos-api.jorgenkh.no/youtube/aN9p5iSKGAg)](https://youtu.be/aN9p5iSKGAg)
  
+## Citation
+If you use this code please cite it as:
+```
+@ARTICLE{10.1109/MMUL.2025.3646865,
+author={Cheng, Chang-Chieh},
+journal={ IEEE MultiMedia },
+title={{ Image Painter: An Optimized Stroke-Based Algorithm for Artistic Image Stylization }},
+year={5555},
+volume={},
+number={01},
+ISSN={1941-0166},
+pages={1-14},
+doi={10.1109/MMUL.2025.3646865},
+url = {https://doi.ieeecomputersociety.org/10.1109/MMUL.2025.3646865},
+publisher={IEEE Computer Society},
+address={Los Alamitos, CA, USA},
+month=dec
+}
+```
